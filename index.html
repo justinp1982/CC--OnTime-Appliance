@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>On-Time Appliance Repair | DFW Refrigerator, Washer & Dryer Service</title>
+    <meta name="description" content="Expert appliance repair in Dallas-Fort Worth. We fix refrigerators, washers, dryers, and ovens. $20 off if we miss our arrival window. Licensed & Insured.">
+    <meta name="keywords" content="Appliance Repair Dallas, Refrigerator Repair DFW, Washer Repair, Dryer Repair, SubZero Repair, Wolf Repair, On-Time Appliance">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ontimeappliancedfw.com/">
+    <meta property="og:title" content="On-Time Appliance Repair | DFW Experts">
+    <meta property="og:description" content="The repair service that actually shows up when we say we will. Expert repair for all major brands.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581092921461-eab62e97a78e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "On-Time Appliance Repair",
+      "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a78e",
+      "@id": "https://ontimeappliancedfw.com",
+      "url": "https://ontimeappliancedfw.com",
+      "telephone": "+1-214-916-0337",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Serving North DFW",
+        "addressLocality": "Dallas",
+        "addressRegion": "TX",
+        "postalCode": "75248",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.9618,
+        "longitude": -96.8292
+      },
+      "areaServed": ["Dallas", "Plano", "Richardson", "Carrollton", "Addison", "Allen", "Frisco"],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS VARIABLES & RESET */
+        :root {
+            --primary-blue: #003366;
+            --accent-orange: #FF6600;
+            --light-gray: #F4F4F4;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { color: var(--text-dark); line-height: 1.6; }
+        
+        a { text-decoration: none; }
+        
+        html { scroll-behavior: smooth; }
+
+        /* HEADER */
+        header {
+            background-color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-blue); font-style: italic; }
+        .logo span { font-weight: normal; color: #555; font-style: normal; }
+        
+        .phone-cta { text-align: right; }
+        .phone-cta a { display: block; font-size: 1.2rem; font-weight: bold; color: var(--primary-blue); }
+        .phone-cta span { font-size: 0.8rem; color: var(--accent-orange); font-weight: bold; }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1581092921461-eab62e97a78e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 4rem 5%;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; text-transform: uppercase; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+        
+        .btn {
+            background-color: var(--accent-orange);
+            color: var(--white);
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+        .btn:hover { transform: scale(1.05); background-color: #e55b00; }
+
+        /* TRUST BAR */
+        .trust-bar {
+            background-color: var(--light-gray);
+            padding: 2rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        .trust-item h3 { color: var(--primary-blue); margin-bottom: 0.5rem; }
+
+        /* SERVICES */
+        .services { padding: 4rem 5%; }
+        .section-title { text-align: center; color: var(--primary-blue); margin-bottom: 3rem; font-size: 2rem; }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            border: 1px solid #ddd;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: box-shadow 0.3s;
+        }
+        .service-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .service-card h3 { color: var(--accent-orange); margin-bottom: 1rem; }
+
+        /* PROCESS */
+        .process { background-color: var(--primary-blue); color: var(--white); padding: 4rem 5%; }
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            gap: 2rem;
+        }
+        .step { flex: 1; min-width: 200px; }
+        .step-number { font-size: 3rem; font-weight: bold; color: rgba(255,255,255,0.2); display: block; }
+
+        /* ABOUT */
+        .about { padding: 4rem 5%; background-color: var(--light-gray); text-align: center; }
+        .about p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+
+        /* CONTACT FORM */
+        .contact-section { padding: 4rem 5%; background-color: var(--white); }
+        .form-container { max-width: 600px; margin: 0 auto; background: #fff; border: 1px solid #eee; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: bold; color: var(--primary-blue); }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 2px rgba(0,51,102,0.1);
+        }
+        .full-width-btn { width: 100%; text-align: center; }
+
+        /* FOOTER */
+        footer { background-color: #222; color: #fff; padding: 2rem 5%; text-align: center; }
+        footer p { margin-bottom: 1rem; color: #aaa; }
+        .footer-cta { margin-bottom: 1.5rem; }
+        .btn-small { padding: 0.5rem 1rem; font-size: 1rem; background-color: var(--accent-orange); color: white; border-radius: 4px; }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            header { flex-direction: column; gap: 1rem; }
+            .phone-cta { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ON-TIME <span>APPLIANCE</span></div>
+        <div class="phone-cta">
+            <a href="tel:2149160337">📞 (214) 916-0337</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>We Respect Your Schedule.<br>We Fix Your Appliances.</h1>
+        <p>The repair service that actually shows up when we say we will. $20 off if we miss our arrival window by even one minute.</p>
+        <a href="#contact" class="btn">Book My Repair Now</a>
+    </section>
+
+    <section class="trust-bar">
+        <div class="trust-item">
+            <h3>⏱️ The On-Time Promise</h3>
+            <p>Narrow arrival windows. Real-time tracking text alerts.</p>
+        </div>
+        <div class="trust-item">
+            <h3>💲 Upfront Pricing</h3>
+            <p>Flat-rate quotes before we start. No hourly surprises.</p>
+        </div>
+        <div class="trust-item">
+            <h3>🛠️ Certified Experts</h3>
+            <p>Factory-trained for Samsung, LG, Whirlpool, GE, and more.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title">Is Your Home at a Standstill?</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>❄️ Refrigeration</h3>
+                <p>Not cooling, leaking water, or ice maker jams. We handle sealed systems and thermostat calibration for all major brands.</p>
+            </div>
+            <div class="service-card">
+                <h3>🔥 Cooking</h3>
+                <p>Ovens not heating, burners clicking, or microwave failures. We work safely with gas and high-voltage electric units.</p>
+            </div>
+            <div class="service-card">
+                <h3>💧 Dishwashers</h3>
+                <p>Dishes coming out dirty? Water pooling at the bottom? We fix drainage issues, pumps, and spray arms fast.</p>
+            </div>
+            <div class="service-card">
+                <h3>👕 Laundry</h3>
+                <p>Washers banging or dryers not heating? We carry belts, motors, and heating elements to fix it in one trip.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <h2 class="section-title" style="color:white;">How It Works</h2>
+        <div class="process-steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <h3>You Book</h3>
+                <p>Call or book online. We give you a tight 2-hour window.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <h3>We Notify</h3>
+                <p>You get a text 30 mins before arrival with a tracker.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <h3>We Fix</h3>
+                <p>Upfront pricing. 90% of repairs done on the first visit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2 class="section-title">Why We Watch The Clock</h2>
+        <p>"At On-Time Appliance, we know the only thing worse than a broken refrigerator is a repair company that traps you in your home all day. We founded this company on a simple premise: <strong>Your time is just as valuable as ours.</strong> We don't do '8 am to 5 pm' windows. We are locally owned, factory-trained, and obsessed with punctuality."</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Schedule Your Repair</h2>
+        <div class="form-container">
+            <form id="contact-form" action="https://formspree.io/f/xzdadgyo" method="POST">
+                
+                <input type="hidden" name="_next" value="https://ontimeappliancedfw.com/thanks.html">
+                <input type="hidden" name="_subject" value="New Appliance Repair Request">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(555) 555-5555">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="appliance">Appliance Type</label>
+                    <select id="appliance" name="appliance">
+                        <option value="" disabled selected>Select an appliance...</option>
+                        <option value="refrigerator">Refrigerator / Freezer</option>
+                        <option value="washer">Washing Machine</option>
+                        <option value="dryer">Dryer</option>
+                        <option value="oven">Oven / Range</option>
+                        <option value="dishwasher">Dishwasher</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Briefly Describe the Issue</label>
+                    <textarea id="issue" name="issue" rows="4" placeholder="e.g., Not cooling, making a loud banging noise, etc."></textarea>
+                </div>
+                <button type="submit" class="btn full-width-btn">Request Service Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-cta">
+            <h2>Ready to get back to normal?</h2>
+            <br>
+            <a href="tel:2149160337" class="btn btn-small">Call (214) 916-0337</a>
+        </div>
+        <p>Service Areas: University Park to Allen • Carrollton to Rowlett • North DFW</p>
+        <p>&copy; 2026 On-Time Appliance. Licensed & Insured.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("contact-form");
+        
+        async function handleSubmit(event) {
+            event.preventDefault(); // Stop standard redirect
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            
+            // Change button text to show loading
+            btn.innerText = "Processing...";
+            btn.disabled = true;
+            btn.style.backgroundColor = "#ccc";
+
+            const data = new FormData(event.target);
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // SUCCESS: Redirect to thanks page
+                    window.location.href = "thanks.html"; 
+                } else {
+                    // ERROR
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert(data["errors"].map(error => error["message"]).join(", "));
+                        } else {
+                            alert("Oops! There was a problem submitting your form");
+                        }
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                        btn.style.backgroundColor = ""; // Reset color
+                    })
+                }
+            }).catch(error => {
+                alert("Oops! There was a problem submitting your form. Please call us directly.");
+                btn.innerText = originalText;
+                btn.disabled = false;
+                btn.style.backgroundColor = "";
+            });
+        }
+
+        if(form) {
+            form.addEventListener("submit", handleSubmit);
+        }
+    </script>
+</body>
+</html>
